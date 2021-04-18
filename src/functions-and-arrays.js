@@ -80,12 +80,14 @@ const wordsArr = ['seat', 'correspond', 'linen', 'motif', 'hole', 'smell', 'smar
 function averageWordLength (listC1) {
   if(listC1.length === 0) {
     return null;
+  };
+  const sumListC1 = 0;
+  for (let i=0; i<listC1.length; i++){
+    sumListC1 += listC1[i].length;
   }
-  if(listC1.length === 1);
-  const sumListC1 = sum(ListC1);
-  let avgListC1 = sumListC1 / listC1.length;
-  return avgListC1;
-    }
+  let avg = sumListC1.join("") / listC1.length;
+  return avg;
+  }
 
 // Bonus 
 function avg(listC2){
@@ -114,21 +116,26 @@ function uniquifyArray (listD) {
     return null;
   }
   let newListD = []
-  for (let i= 0; i<listD.length; i++)
+  for (let i= 0; i<listD.length; i++) {
   if(listD[i] === newListD[i]) {
   continue;
-  } else (newListD.push(""))
+  } else if (listD[i]){
+  } else { 
+    newListD.push(listD[i]);
+  }
   return newListD;
-
-
+  }
 }
 
 // Iteration #6: Find elements
 const wordsFind = ['machine', 'subset', 'trouble', 'starting', 'matter', 'eating', 'truth', 'disobedience'];
 
-function doesWordExist (listE) {
+function doesWordExist (listE,  wordToFind) {
   if(listE.length === 0) {
     return null;
+  };
+  if (wordToFind ) {
+
   }
 }
 
@@ -148,10 +155,8 @@ const wordsCount = [
 ];
 
 function howManyTimes (listF) {
-  if(listF.length === 0) {
-    let numberLetter = `0 (zero)`
-    return numberLetter;
-  }
+  let count = 0;
+  if(listF.length === 0) return `0 (zero) `;
 }
 
 
